@@ -4,6 +4,29 @@ $pad: 1.25em;
 
 
 
+// Grid
+
+
+$minor: 38.20%;
+$major: 61.80%;
+
+/* make a column
+*/
+@mixin col($width, $margin_left, $margin_right) {
+  width: $width;
+  margin: 0 $margin_right 0 $margin_left;
+  float: left;
+}
+
+/* block element -- expand something full size inside a container
+*/
+@mixin block {
+  width: 100%;
+  float: left;
+}
+
+
+
 
 // The Responsive Mixin
 // - http://thesassway.com/intermediate/responsive-web-design-part-1

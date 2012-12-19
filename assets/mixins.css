@@ -1,26 +1,30 @@
+/* make a column
+*/
+/* block element -- expand something full size inside a container
+*/
 @media only screen and (max-width: 600px) {
-  /* line 58, mixins.scss */
+  /* line 81, mixins.scss */
   .mobile {
     display: block;
   }
 
-  /* line 61, mixins.scss */
+  /* line 84, mixins.scss */
   .desktop {
     display: none;
   }
 }
 @media only screen and (min-width: 601px) {
-  /* line 66, mixins.scss */
+  /* line 89, mixins.scss */
   .mobile {
     display: none;
   }
 
-  /* line 69, mixins.scss */
+  /* line 92, mixins.scss */
   .desktop {
     display: block;
   }
 }
-/* line 78, mixins.scss */
+/* line 101, mixins.scss */
 img {
   max-width: 100%;
 }

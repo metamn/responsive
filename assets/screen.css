@@ -67,29 +67,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* make a column
+*/
+/* block element -- expand something full size inside a container
+*/
 @media only screen and (max-width: 600px) {
-  /* line 58, mixins.scss */
+  /* line 81, mixins.scss */
   .mobile {
     display: block;
   }
 
-  /* line 61, mixins.scss */
+  /* line 84, mixins.scss */
   .desktop {
     display: none;
   }
 }
 @media only screen and (min-width: 601px) {
-  /* line 66, mixins.scss */
+  /* line 89, mixins.scss */
   .mobile {
     display: none;
   }
 
-  /* line 69, mixins.scss */
+  /* line 92, mixins.scss */
   .desktop {
     display: block;
   }
 }
-/* line 78, mixins.scss */
+/* line 101, mixins.scss */
 img {
   max-width: 100%;
 }
@@ -283,4 +287,70 @@ body .container input[type='checkbox']:after {
 /* line 223, typography.scss */
 body .container input[type='checkbox']:checked:after {
   color: black;
+}
+
+/* line 2, startpage.scss */
+body .container {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 6, startpage.scss */
+body .container #logo {
+  width: 38.2%;
+  margin: 0 0 0 0;
+  float: left;
+}
+/* line 10, startpage.scss */
+body .container #strapline {
+  width: 38.2%;
+  margin: 0 0 0 0;
+  float: left;
+}
+/* line 14, startpage.scss */
+body .container #menu {
+  width: 38.2%;
+  margin: 0 0 0 0;
+  float: left;
+}
+/* line 18, startpage.scss */
+body .container #info {
+  width: 38.2%;
+  margin: 0 0 0 0;
+  float: left;
+}
+/* line 22, startpage.scss */
+body .container #content {
+  width: 61.8%;
+  margin: 0 0 0 0;
+  float: left;
+}
+
+/* line 1, theme.scss */
+#logo {
+  background: lightblue;
+}
+
+/* line 5, theme.scss */
+#strapline {
+  background: lightcoral;
+}
+
+/* line 9, theme.scss */
+#menu {
+  background: lightcyan;
+}
+
+/* line 13, theme.scss */
+#info {
+  background: lightgray;
+}
+
+/* line 17, theme.scss */
+#content {
+  background: lightgreen;
+}
+
+/* line 21, theme.scss */
+#sidebar {
+  background: lightpink;
 }

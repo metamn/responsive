@@ -1,0 +1,27 @@
+body {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    
+    #logo {
+      @include col($minor, 0, 0);      
+    }
+    
+    #strapline {
+      @include col($minor, 0, 0);
+    }
+    
+    #menu {
+      @include col($minor, 0, 0);
+    }
+    
+    #info {
+      @include col($minor, 0, 0);
+    }
+    
+    #content {
+      @include col($major, 0, 0);
+    }
+  }
+}
+
