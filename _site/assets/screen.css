@@ -298,71 +298,49 @@ body .container input[type='checkbox']:checked:after {
   color: black;
 }
 
-/* line 2, startpage.scss */
+/* line 2, startpage-centered.scss */
 body .container {
-  width: 100%;
+  width: 98%;
   margin: 0 auto;
-  position: relative;
 }
-/* line 7, startpage.scss */
+/* line 6, startpage-centered.scss */
 body .container #logo {
-  width: 100%;
+  width: 9em;
+  margin: 0 0 0 19.1%;
   float: left;
-  position: fixed;
 }
-/* line 11, startpage.scss */
+/* line 9, startpage-centered.scss */
 body .container #logo h1 {
-  padding: 0.625em;
-  font-size: 100%;
-}
-/* line 17, startpage.scss */
-body .container #strapline {
-  width: 100%;
-  float: left;
-  margin-top: 2.5em;
-}
-/* line 21, startpage.scss */
-body .container #strapline h2 {
-  padding: 0.3125em;
-}
-/* line 26, startpage.scss */
-body .container #menu {
-  width: 100%;
-  float: left;
-}
-/* line 29, startpage.scss */
-body .container #menu ul {
-  width: 15%;
-  margin: 0 10% 0 0;
-  float: left;
-}
-/* line 32, startpage.scss */
-body .container #menu ul.last {
-  margin-right: 0;
-}
-/* line 37, startpage.scss */
-body .container #info {
-  width: 61.8%;
-  margin: 0 0 0 38.2%;
-  float: left;
-  position: relative;
-  z-index: 1;
-  height: 1.25em;
   padding: 0.625em 0;
-  position: fixed;
-  top: 0;
 }
-/* line 46, startpage.scss */
-body .container #info h3 {
+/* line 14, startpage-centered.scss */
+body .container #strapline {
+  width: 38.2%;
+  margin: 0 0 0 2%;
+  float: left;
+}
+/* line 17, startpage-centered.scss */
+body .container #strapline h2 {
+  padding: 0.625em 0;
+}
+/* line 22, startpage-centered.scss */
+body .container #menu {
+  width: 61.8%;
+  margin: 0 19.1% 0 19.1%;
+  float: left;
+  margin-bottom: 1.25em;
+}
+/* line 26, startpage-centered.scss */
+body .container #menu h3 {
   display: none;
 }
-/* line 50, startpage.scss */
-body .container #info ul {
+/* line 29, startpage-centered.scss */
+body .container #menu ul {
   display: block;
   margin: 0;
 }
 /* line 122, mixins.scss */
-body .container #info ul li {
+body .container #menu ul li {
   display: inline-block;
   list-style-type: none;
   margin-left: 0;
@@ -370,28 +348,57 @@ body .container #info ul li {
   float: left;
 }
 /* line 129, mixins.scss */
-body .container #info ul li.last {
+body .container #menu ul li.last {
   margin-right: 0;
 }
-/* line 55, startpage.scss */
+/* line 34, startpage-centered.scss */
+body .container #navigation {
+  width: 19.1%;
+  margin: 0 0 0 80.9%;
+  float: left;
+  position: fixed;
+  top: 7.5em;
+}
+/* line 40, startpage-centered.scss */
+body .container #navigation h3 {
+  display: none;
+}
+/* line 45, startpage-centered.scss */
+body .container #info {
+  width: 38.2%;
+  margin: 0 0 0 61.8%;
+  float: left;
+  position: fixed;
+  top: 0;
+}
+/* line 50, startpage-centered.scss */
+body .container #info h3 {
+  display: none;
+}
+/* line 54, startpage-centered.scss */
+body .container #info ul {
+  float: right;
+}
+/* line 59, startpage-centered.scss */
 body .container #content {
   width: 61.8%;
-  margin: 0 0 0 38.2%;
+  margin: 0 19.1% 0 19.1%;
   float: left;
-  position: absolute;
-  top: 2.5em;
 }
-/* line 61, startpage.scss */
+/* line 62, startpage-centered.scss */
 body .container #content h3 {
   display: none;
 }
-/* line 67, startpage.scss */
+/* line 66, startpage-centered.scss */
+body .container #content article {
+  max-width: 700px;
+}
+/* line 68, startpage-centered.scss */
 body .container #content article #title {
   display: none;
 }
-/* line 77, startpage.scss */
+/* line 74, startpage-centered.scss */
 body .container #sidebar {
-  width: 38.2%;
-  margin: 0 0 0 0;
+  width: 100%;
   float: left;
 }

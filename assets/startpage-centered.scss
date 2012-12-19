@@ -1,0 +1,78 @@
+body {
+  .container {
+    width: 98%;
+    margin: 0 auto;
+    
+    #logo {
+      @include col(9em, $minor/2, 0);
+      
+      h1 {
+        padding: $pad/2 0;
+      }
+    }
+    
+    #strapline {
+      @include col($minor, 2%, 0);
+
+      h2 {
+        padding: $pad/2 0;
+      }
+    }
+    
+    #menu {
+      @include col($major, $minor/2, $minor/2);
+      margin-bottom: $pad;
+      
+      h3 {
+        display: none;
+      }
+      ul {
+        @include list-inline($pad);
+      }
+    }
+    
+    #navigation {
+      @include col($minor/2, $major + $minor/2, 0);
+      position: fixed;
+      top: 7.5em;
+      
+    
+      h3 {
+        display: none;
+      }
+    }
+    
+    #info {
+      @include col($minor, $major, 0);
+      position: fixed;
+      top: 0;
+      
+      h3 {
+        display: none;
+      }
+      
+      ul {
+        float: right;
+      }
+    }
+    
+    #content {
+      @include col($major, $minor/2, $minor/2);
+      
+      h3 {
+        display: none;
+      }
+      
+      article {
+        max-width: 700px;
+        #title {
+          display: none;
+        }
+      }
+    }
+    
+    #sidebar {
+      @include block;
+    }
+  }
+}
