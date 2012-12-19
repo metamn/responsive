@@ -2,25 +2,80 @@ body {
   .container {
     width: 100%;
     margin: 0 auto;
+    position: relative;
     
     #logo {
-      @include col($minor, 0, 0);      
+      @include block;  
+      position: fixed; 
+      
+      h1 {
+        padding: $pad/2;
+        font-size: 100%;
+      }   
     }
     
     #strapline {
-      @include col($minor, 0, 0);
+      @include block;
+      margin-top: $pad*2;
+      
+      h2 {
+        padding: $pad/4;
+      }
     }
     
     #menu {
-      @include col($minor, 0, 0);
+      @include block;
+      
+      ul {
+        @include col(15%, 0, 10%);
+      }
+      ul.last {
+        margin-right: 0;
+      }
     }
     
     #info {
-      @include col($minor, 0, 0);
+      @include col($major, $minor, 0);
+      @include z-index(1, $pad);
+      padding: $pad/2 0;
+      
+      position: fixed;
+      top: 0;
+      
+      
+      h3 {
+        display: none;
+      }
+      
+      ul {
+        @include list-inline($pad);
+      }
     }
     
     #content {
-      @include col($major, 0, 0);
+      @include col($major, $minor, 0);
+      
+      position: absolute;
+      top: $pad*2;
+      
+      h3 {
+        display: none;
+      }
+      
+      article {
+               
+        #title {
+          display: none;
+        }
+        
+        #body {
+         
+        }
+      }
+    }
+    
+    #sidebar {
+      @include col($minor, 0, 0);
     }
   }
 }

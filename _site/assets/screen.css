@@ -98,6 +98,15 @@ img {
   max-width: 100%;
 }
 
+/* list, inline
+*/
+/* set z-index
+
+- parent must have set 'position'
+- this element must have set height
+- http://www.tjkdesign.com/articles/z-index/teach_yourself_how_elements_stack.asp
+
+*/
 /* line 2, typography.scss */
 body {
   font-size: 100%;
@@ -293,64 +302,96 @@ body .container input[type='checkbox']:checked:after {
 body .container {
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
-/* line 6, startpage.scss */
+/* line 7, startpage.scss */
 body .container #logo {
-  width: 38.2%;
-  margin: 0 0 0 0;
+  width: 100%;
   float: left;
+  position: fixed;
 }
-/* line 10, startpage.scss */
+/* line 11, startpage.scss */
+body .container #logo h1 {
+  padding: 0.625em;
+  font-size: 100%;
+}
+/* line 17, startpage.scss */
 body .container #strapline {
-  width: 38.2%;
-  margin: 0 0 0 0;
+  width: 100%;
   float: left;
+  margin-top: 2.5em;
 }
-/* line 14, startpage.scss */
+/* line 21, startpage.scss */
+body .container #strapline h2 {
+  padding: 0.3125em;
+}
+/* line 26, startpage.scss */
 body .container #menu {
-  width: 38.2%;
-  margin: 0 0 0 0;
+  width: 100%;
   float: left;
 }
-/* line 18, startpage.scss */
+/* line 29, startpage.scss */
+body .container #menu ul {
+  width: 15%;
+  margin: 0 10% 0 0;
+  float: left;
+}
+/* line 32, startpage.scss */
+body .container #menu ul.last {
+  margin-right: 0;
+}
+/* line 37, startpage.scss */
 body .container #info {
-  width: 38.2%;
-  margin: 0 0 0 0;
+  width: 61.8%;
+  margin: 0 0 0 38.2%;
+  float: left;
+  position: relative;
+  z-index: 1;
+  height: 1.25em;
+  padding: 0.625em 0;
+  position: fixed;
+  top: 0;
+}
+/* line 46, startpage.scss */
+body .container #info h3 {
+  display: none;
+}
+/* line 50, startpage.scss */
+body .container #info ul {
+  display: block;
+  margin: 0;
+}
+/* line 122, mixins.scss */
+body .container #info ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0;
+  margin-right: 1.25em;
   float: left;
 }
-/* line 22, startpage.scss */
+/* line 129, mixins.scss */
+body .container #info ul li.last {
+  margin-right: 0;
+}
+/* line 55, startpage.scss */
 body .container #content {
   width: 61.8%;
+  margin: 0 0 0 38.2%;
+  float: left;
+  position: absolute;
+  top: 2.5em;
+}
+/* line 61, startpage.scss */
+body .container #content h3 {
+  display: none;
+}
+/* line 67, startpage.scss */
+body .container #content article #title {
+  display: none;
+}
+/* line 77, startpage.scss */
+body .container #sidebar {
+  width: 38.2%;
   margin: 0 0 0 0;
   float: left;
-}
-
-/* line 1, theme.scss */
-#logo {
-  background: lightblue;
-}
-
-/* line 5, theme.scss */
-#strapline {
-  background: lightcoral;
-}
-
-/* line 9, theme.scss */
-#menu {
-  background: lightcyan;
-}
-
-/* line 13, theme.scss */
-#info {
-  background: lightgray;
-}
-
-/* line 17, theme.scss */
-#content {
-  background: lightgreen;
-}
-
-/* line 21, theme.scss */
-#sidebar {
-  background: lightpink;
 }

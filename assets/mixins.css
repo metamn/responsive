@@ -28,3 +28,13 @@
 img {
   max-width: 100%;
 }
+
+/* list, inline
+*/
+/* set z-index
+
+- parent must have set 'position'
+- this element must have set height
+- http://www.tjkdesign.com/articles/z-index/teach_yourself_how_elements_stack.asp
+
+*/

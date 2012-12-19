@@ -101,3 +101,46 @@ $desktop: 1440px;
 img {
 	max-width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+// General mixins
+
+/* list, inline
+*/
+@mixin list-inline($margin-right) {
+  display: block;
+  margin: 0;
+  
+  li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 0;
+    margin-right: $margin-right;
+    float: left;
+  }
+  li.last {
+    margin-right: 0;
+  }
+}
+
+
+/* set z-index
+
+- parent must have set 'position'
+- this element must have set height
+- http://www.tjkdesign.com/articles/z-index/teach_yourself_how_elements_stack.asp
+
+*/
+@mixin z-index($level, $height) {
+  position: relative;
+  z-index: $level;
+  height: $height;
+}
