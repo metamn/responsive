@@ -66,3 +66,221 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+@media only screen and (max-width: 600px) {
+  /* line 58, mixins.scss */
+  .mobile {
+    display: block;
+  }
+
+  /* line 61, mixins.scss */
+  .desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 601px) {
+  /* line 66, mixins.scss */
+  .mobile {
+    display: none;
+  }
+
+  /* line 69, mixins.scss */
+  .desktop {
+    display: block;
+  }
+}
+/* line 78, mixins.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 2, typography.scss */
+body {
+  font-size: 100%;
+  line-height: 1.25;
+}
+/* line 21, typography.scss */
+body .container h1 {
+  font-size: 2.61538em;
+  padding: 1.28666em 0;
+  /* handhelds to iPhone 3,4*/
+  /* a collector mode, combining all above */
+  /* a collector mode, combining smartphones in landscape mode & tablets */
+}
+@media only screen and (max-width: 600px) {
+  /* line 21, typography.scss */
+  body .container h1 {
+    font-size: 1.75em;
+    padding: 1.51786em 0;
+  }
+}
+/* line 31, typography.scss */
+body .container h2 {
+  font-size: 2em;
+  padding: 1.25em 0;
+  /* handhelds to iPhone 3,4*/
+  /* a collector mode, combining all above */
+  /* a collector mode, combining smartphones in landscape mode & tablets */
+}
+@media only screen and (max-width: 600px) {
+  /* line 31, typography.scss */
+  body .container h2 {
+    font-size: 1.5em;
+    padding: 1.45833em 0;
+  }
+}
+/* line 41, typography.scss */
+body .container h3 {
+  font-size: 1.61538em;
+  padding: 1.30958em 0;
+  /* handhelds to iPhone 3,4*/
+  /* a collector mode, combining all above */
+  /* a collector mode, combining smartphones in landscape mode & tablets */
+}
+@media only screen and (max-width: 600px) {
+  /* line 41, typography.scss */
+  body .container h3 {
+    font-size: 1.33333em;
+    padding: 1.25em 0;
+  }
+}
+/* line 51, typography.scss */
+body .container h4 {
+  font-size: 1.23077em;
+  padding: 1.40579em 0;
+  /* handhelds to iPhone 3,4*/
+  /* a collector mode, combining all above */
+  /* a collector mode, combining smartphones in landscape mode & tablets */
+}
+@media only screen and (max-width: 600px) {
+  /* line 51, typography.scss */
+  body .container h4 {
+    font-size: 1.16667em;
+    padding: 1.51785em 0;
+  }
+}
+/* line 60, typography.scss */
+body .container h5 {
+  text-transform: uppercase;
+}
+/* line 61, typography.scss */
+body .container h6 {
+  font-vriant: small-caps;
+}
+/* line 71, typography.scss */
+body .container p + p {
+  margin-top: 1.25em;
+}
+/* line 76, typography.scss */
+body .container q, body .container blockquote {
+  margin: 1.25em;
+  border-left: 1px dotted;
+  padding-left: 1.25em;
+  font-style: italic;
+  font-size: larger;
+}
+/* line 87, typography.scss */
+body .container address {
+  font-variant: small-caps;
+}
+/* line 95, typography.scss */
+body .container ul, body .container menu, body .container dir, body .container ol {
+  margin: 1.25em;
+  list-style-type: square;
+}
+/* line 100, typography.scss */
+body .container ol {
+  list-style-type: decimal;
+}
+/* line 104, typography.scss */
+body .container dl {
+  margin: 1.25em 0;
+}
+/* line 107, typography.scss */
+body .container dl dt {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 111, typography.scss */
+body .container dl dd {
+  margin: 0.625em 1.25em 1.875em;
+}
+/* line 121, typography.scss */
+body .container table {
+  margin: 1.25em 0;
+}
+/* line 126, typography.scss */
+body .container table thead tr td {
+  font-weight: bold;
+}
+/* line 132, typography.scss */
+body .container table tbody {
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
+}
+/* line 137, typography.scss */
+body .container table td, body .container table th, body .container table tr {
+  text-align: left;
+  vertical-align: top;
+}
+/* line 142, typography.scss */
+body .container table td {
+  padding: 1.25em;
+}
+/* line 152, typography.scss */
+body .container em {
+  font-style: italic;
+}
+/* line 156, typography.scss */
+body .container strong {
+  font-weight: bold;
+}
+/* line 168, typography.scss */
+body .container input, body .container textarea {
+  border: none;
+  outline: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 178, typography.scss */
+body .container input[type='text'], body .container input[type='password'], body .container input[type='email'] {
+  border-bottom: 1px solid;
+  font-style: italic;
+  color: gray;
+  padding: 0.625em;
+}
+/* line 185, typography.scss */
+body .container input[type='text']:focus, body .container input[type='password']:focus, body .container input[type='email']:focus {
+  color: black;
+  font-style: normal;
+}
+/* line 191, typography.scss */
+body .container input[type='submit'], body .container input[type='button'] {
+  background: black;
+  color: lightgray;
+  padding: 0.625em;
+}
+/* line 196, typography.scss */
+body .container input[type='submit']:hover, body .container input[type='button']:hover {
+  cursor: pointer;
+  color: white;
+}
+/* line 203, typography.scss */
+body .container input[type='radio']:after {
+  content: '\2610';
+  margin-right: 0.625em;
+}
+/* line 207, typography.scss */
+body .container input[type='radio']:checked:after {
+  content: '\25a3';
+}
+/* line 212, typography.scss */
+body .container input[type='checkbox']:after {
+  content: '\272A';
+  margin-right: 0.15625em;
+}
+/* line 223, typography.scss */
+body .container input[type='checkbox']:checked:after {
+  color: black;
+}

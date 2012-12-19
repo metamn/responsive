@@ -1,0 +1,229 @@
+
+body {
+	
+	// Set vertical rhythm
+	font-size: 100%;
+	line-height: 1.25;
+	
+	.container {
+		
+		
+		// Headings
+		// -----------------------------------------------
+		
+		
+		// Vertical rhythm
+		// - from http://lamb.cc/typograph/ 
+		// - desktop: stranded, em, h1=2.6
+		// - mobile: traditional, em, h1=1.3/4
+
+		
+		h1 { 
+			font-size: 2.61538em; 
+			padding: 1.28666em 0; 
+			
+			@include respond-to(all-mobile) {
+				font-size: 1.75em; 
+				padding: 1.51786em 0;
+			}
+		}
+		
+		h2 { 
+			font-size: 2em; 
+			padding: 1.25em 0; 
+			
+			@include respond-to(all-mobile) {
+				font-size: 1.5em; 
+				padding: 1.45833em 0;
+			}
+		}
+		
+		h3 { 
+			font-size: 1.61538em; 
+			padding: 1.30958em 0; 
+		
+			@include respond-to(all-mobile) {
+				font-size: 1.33333em;
+				padding: 1.25em 0;
+			}
+		}
+		
+		h4 { 
+			font-size: 1.23077em; 
+		  padding: 1.40579em 0;
+		  
+			@include respond-to(all-mobile) {
+				font-size: 1.16667em;
+				padding: 1.51785em 0;
+			}
+		}
+		h5 { text-transform: uppercase; }
+		h6 { font-vriant: small-caps; }
+		
+		
+		
+		
+		// Block level elements
+		// -----------------------------------------------
+		
+		
+		// the second <p> has a top margin
+		p + p {
+			margin-top: $pad;
+		}
+		
+		// blockquote is simply indented, enlarged
+		q, blockquote {
+			margin: $pad;
+			
+			border-left: 1px dotted;
+			padding-left: $pad;
+			
+			font-style: italic;
+			font-size: larger;
+		}
+		
+		// address is small caps
+		address {
+			font-variant: small-caps;
+		}
+		
+		
+		// Lists
+		// -----------------------------------------------
+		
+		ul, menu, dir, ol {
+			margin: $pad;
+			list-style-type: square;
+		}
+		
+		ol {
+			list-style-type: decimal;
+		}
+		
+		dl {
+			margin: $pad 0;
+			
+			dt {
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			dd {
+				margin: $pad/2 $pad ($pad + $pad/2);
+			}
+		}
+		
+		
+		
+		// Tables
+		// -----------------------------------------------
+		
+		table {
+			margin: $pad 0;
+			
+			thead {
+				tr {
+					td {
+						font-weight: bold;
+					}
+				}
+			}
+			
+			tbody {
+				border-top: 1px dotted;
+				border-bottom: 1px dotted;
+			}
+			
+			td, th, tr {
+  			text-align: left;
+  			vertical-align: top;
+			}
+			
+			td {
+				padding: $pad;
+			}
+		}
+		
+		
+		
+		// Text styles
+		// -----------------------------------------------
+	
+		em {
+			font-style: italic;
+		}
+		
+		strong {
+			font-weight: bold;
+		}
+		
+		
+		
+		
+		// Forms
+		// -----------------------------------------------
+		
+		
+		// Reset browser defaults
+		input, textarea {
+			border: none;
+			outline: 0;
+			
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+		}
+		
+		// Text
+		input[type='text'], input[type='password'], input[type='email'] {
+			border-bottom: 1px solid;
+			font-style: italic;
+			color: gray;
+			
+			padding: $pad/2;
+		}
+		input[type='text']:focus, input[type='password']:focus, input[type='email']:focus {
+			color: black;
+			font-style: normal;
+		}
+		
+		// Button
+		input[type='submit'], input[type='button'] {		
+			background: black;
+			color: lightgray;
+			padding: $pad/2;
+		}
+		input[type='submit']:hover, input[type='button']:hover {
+			cursor: pointer;
+			color: white;
+		}
+		
+		
+		// Radio
+		input[type='radio']:after {
+			content: '\2610';
+			margin-right: $pad/2;
+		}
+		input[type='radio']:checked:after {
+			content: '\25a3';
+		}
+		
+		// Checkbox 
+		input[type='checkbox']:after {
+			content: '\272A';
+			margin-right: $pad/8;
+			
+			// This glyph is too small, so grow it
+			//font-size: 200%;
+			//line-height: .5;
+			//vertical-align: top;
+			
+			//color: lightgray;
+		}
+		input[type='checkbox']:checked:after {
+			color: black;
+		}
+	
+	}
+}
+
