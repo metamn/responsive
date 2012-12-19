@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'col'.
-        on line 7 of /home/cs/work/responsive/assets/startpage-centered.scss, in `col'
-        from line 7 of /home/cs/work/responsive/assets/startpage-centered.scss
+        on line 8 of /home/cs/work/responsive/assets/startpage-centered.scss, in `col'
+        from line 8 of /home/cs/work/responsive/assets/startpage-centered.scss
 
 Backtrace:
-/home/cs/work/responsive/assets/startpage-centered.scss:7:in `col'
-/home/cs/work/responsive/assets/startpage-centered.scss:7
+/home/cs/work/responsive/assets/startpage-centered.scss:8:in `col'
+/home/cs/work/responsive/assets/startpage-centered.scss:8
 /var/lib/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:251:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
@@ -94,4 +94,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'col'.\A         on line 7 of /home/cs/work/responsive/assets/startpage-centered.scss, in `col'\A         from line 7 of /home/cs/work/responsive/assets/startpage-centered.scss"; }
+  content: "Syntax error: Undefined mixin 'col'.\A         on line 8 of /home/cs/work/responsive/assets/startpage-centered.scss, in `col'\A         from line 8 of /home/cs/work/responsive/assets/startpage-centered.scss"; }

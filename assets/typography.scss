@@ -14,48 +14,27 @@ body {
 		
 		// Vertical rhythm
 		// - from http://lamb.cc/typograph/ 
-		// - desktop: stranded, em, h1=2.6
 		// - mobile: traditional, em, h1=1.3/4
 
 		
 		h1 { 
-			font-size: 2.61538em; 
-			padding: 1.28666em 0; 
-			
-			@include respond-to(all-mobile) {
-				font-size: 1.75em; 
-				padding: 1.51786em 0;
-			}
+			font-size: 1.75em; 
+			padding: 1.51786em 0;
 		}
 		
 		h2 { 
-			font-size: 2em; 
-			padding: 1.25em 0; 
-			
-			@include respond-to(all-mobile) {
-				font-size: 1.5em; 
-				padding: 1.45833em 0;
-			}
+			font-size: 1.5em; 
+			padding: 1.45833em 0; 
 		}
 		
 		h3 { 
-			font-size: 1.61538em; 
-			padding: 1.30958em 0; 
-		
-			@include respond-to(all-mobile) {
-				font-size: 1.33333em;
-				padding: 1.25em 0;
-			}
+			font-size: 1.33333em;
+			padding: 1.25em 0; 
 		}
 		
 		h4 { 
-			font-size: 1.23077em; 
-		  padding: 1.40579em 0;
-		  
-			@include respond-to(all-mobile) {
-				font-size: 1.16667em;
-				padding: 1.51785em 0;
-			}
+			font-size: 1.16667em;
+			padding: 1.51785em 0;
 		}
 		h5 { text-transform: uppercase; }
 		h6 { font-vriant: small-caps; }

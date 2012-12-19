@@ -112,79 +112,39 @@ body {
   font-size: 100%;
   line-height: 1.25;
 }
-/* line 21, typography.scss */
+/* line 20, typography.scss */
 body .container h1 {
-  font-size: 2.61538em;
-  padding: 1.28666em 0;
-  /* handhelds to iPhone 3,4*/
-  /* a collector mode, combining all above */
-  /* a collector mode, combining smartphones in landscape mode & tablets */
+  font-size: 1.75em;
+  padding: 1.51786em 0;
 }
-@media only screen and (max-width: 600px) {
-  /* line 21, typography.scss */
-  body .container h1 {
-    font-size: 1.75em;
-    padding: 1.51786em 0;
-  }
-}
-/* line 31, typography.scss */
+/* line 25, typography.scss */
 body .container h2 {
-  font-size: 2em;
-  padding: 1.25em 0;
-  /* handhelds to iPhone 3,4*/
-  /* a collector mode, combining all above */
-  /* a collector mode, combining smartphones in landscape mode & tablets */
+  font-size: 1.5em;
+  padding: 1.45833em 0;
 }
-@media only screen and (max-width: 600px) {
-  /* line 31, typography.scss */
-  body .container h2 {
-    font-size: 1.5em;
-    padding: 1.45833em 0;
-  }
-}
-/* line 41, typography.scss */
+/* line 30, typography.scss */
 body .container h3 {
-  font-size: 1.61538em;
-  padding: 1.30958em 0;
-  /* handhelds to iPhone 3,4*/
-  /* a collector mode, combining all above */
-  /* a collector mode, combining smartphones in landscape mode & tablets */
+  font-size: 1.33333em;
+  padding: 1.25em 0;
 }
-@media only screen and (max-width: 600px) {
-  /* line 41, typography.scss */
-  body .container h3 {
-    font-size: 1.33333em;
-    padding: 1.25em 0;
-  }
-}
-/* line 51, typography.scss */
+/* line 35, typography.scss */
 body .container h4 {
-  font-size: 1.23077em;
-  padding: 1.40579em 0;
-  /* handhelds to iPhone 3,4*/
-  /* a collector mode, combining all above */
-  /* a collector mode, combining smartphones in landscape mode & tablets */
+  font-size: 1.16667em;
+  padding: 1.51785em 0;
 }
-@media only screen and (max-width: 600px) {
-  /* line 51, typography.scss */
-  body .container h4 {
-    font-size: 1.16667em;
-    padding: 1.51785em 0;
-  }
-}
-/* line 60, typography.scss */
+/* line 39, typography.scss */
 body .container h5 {
   text-transform: uppercase;
 }
-/* line 61, typography.scss */
+/* line 40, typography.scss */
 body .container h6 {
   font-vriant: small-caps;
 }
-/* line 71, typography.scss */
+/* line 50, typography.scss */
 body .container p + p {
   margin-top: 1.25em;
 }
-/* line 76, typography.scss */
+/* line 55, typography.scss */
 body .container q, body .container blockquote {
   margin: 1.25em;
   border-left: 1px dotted;
@@ -192,63 +152,63 @@ body .container q, body .container blockquote {
   font-style: italic;
   font-size: larger;
 }
-/* line 87, typography.scss */
+/* line 66, typography.scss */
 body .container address {
   font-variant: small-caps;
 }
-/* line 95, typography.scss */
+/* line 74, typography.scss */
 body .container ul, body .container menu, body .container dir, body .container ol {
   margin: 1.25em;
   list-style-type: square;
 }
-/* line 100, typography.scss */
+/* line 79, typography.scss */
 body .container ol {
   list-style-type: decimal;
 }
-/* line 104, typography.scss */
+/* line 83, typography.scss */
 body .container dl {
   margin: 1.25em 0;
 }
-/* line 107, typography.scss */
+/* line 86, typography.scss */
 body .container dl dt {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 111, typography.scss */
+/* line 90, typography.scss */
 body .container dl dd {
   margin: 0.625em 1.25em 1.875em;
 }
-/* line 121, typography.scss */
+/* line 100, typography.scss */
 body .container table {
   margin: 1.25em 0;
 }
-/* line 126, typography.scss */
+/* line 105, typography.scss */
 body .container table thead tr td {
   font-weight: bold;
 }
-/* line 132, typography.scss */
+/* line 111, typography.scss */
 body .container table tbody {
   border-top: 1px dotted;
   border-bottom: 1px dotted;
 }
-/* line 137, typography.scss */
+/* line 116, typography.scss */
 body .container table td, body .container table th, body .container table tr {
   text-align: left;
   vertical-align: top;
 }
-/* line 142, typography.scss */
+/* line 121, typography.scss */
 body .container table td {
   padding: 1.25em;
 }
-/* line 152, typography.scss */
+/* line 131, typography.scss */
 body .container em {
   font-style: italic;
 }
-/* line 156, typography.scss */
+/* line 135, typography.scss */
 body .container strong {
   font-weight: bold;
 }
-/* line 168, typography.scss */
+/* line 147, typography.scss */
 body .container input, body .container textarea {
   border: none;
   outline: 0;
@@ -256,44 +216,44 @@ body .container input, body .container textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-/* line 178, typography.scss */
+/* line 157, typography.scss */
 body .container input[type='text'], body .container input[type='password'], body .container input[type='email'] {
   border-bottom: 1px solid;
   font-style: italic;
   color: gray;
   padding: 0.625em;
 }
-/* line 185, typography.scss */
+/* line 164, typography.scss */
 body .container input[type='text']:focus, body .container input[type='password']:focus, body .container input[type='email']:focus {
   color: black;
   font-style: normal;
 }
-/* line 191, typography.scss */
+/* line 170, typography.scss */
 body .container input[type='submit'], body .container input[type='button'] {
   background: black;
   color: lightgray;
   padding: 0.625em;
 }
-/* line 196, typography.scss */
+/* line 175, typography.scss */
 body .container input[type='submit']:hover, body .container input[type='button']:hover {
   cursor: pointer;
   color: white;
 }
-/* line 203, typography.scss */
+/* line 182, typography.scss */
 body .container input[type='radio']:after {
   content: '\2610';
   margin-right: 0.625em;
 }
-/* line 207, typography.scss */
+/* line 186, typography.scss */
 body .container input[type='radio']:checked:after {
   content: '\25a3';
 }
-/* line 212, typography.scss */
+/* line 191, typography.scss */
 body .container input[type='checkbox']:after {
   content: '\272A';
   margin-right: 0.15625em;
 }
-/* line 223, typography.scss */
+/* line 202, typography.scss */
 body .container input[type='checkbox']:checked:after {
   color: black;
 }
@@ -303,101 +263,82 @@ body .container {
   width: 98%;
   margin: 0 auto;
 }
-/* line 6, startpage-centered.scss */
+/* line 7, startpage-centered.scss */
 body .container #logo {
-  width: 9em;
-  margin: 0 0 0 19.1%;
+  width: 19.1%;
+  margin: 0 0 0 0;
   float: left;
+  position: relative;
 }
-/* line 9, startpage-centered.scss */
+/* line 11, startpage-centered.scss */
 body .container #logo h1 {
-  padding: 0.625em 0;
+  padding: 1.25em 0 0;
 }
-/* line 14, startpage-centered.scss */
+/* line 16, startpage-centered.scss */
 body .container #strapline {
-  width: 38.2%;
-  margin: 0 0 0 2%;
+  width: 19.1%;
+  margin: 0 0 0 0;
   float: left;
-}
-/* line 17, startpage-centered.scss */
-body .container #strapline h2 {
-  padding: 0.625em 0;
+  position: relative;
+  right: 19.1%;
+  top: 5em;
 }
 /* line 22, startpage-centered.scss */
-body .container #menu {
-  width: 61.8%;
-  margin: 0 19.1% 0 19.1%;
-  float: left;
-  margin-bottom: 1.25em;
+body .container #strapline h2 {
+  padding: 0;
 }
-/* line 26, startpage-centered.scss */
+/* line 27, startpage-centered.scss */
+body .container #menu {
+  width: 19.1%;
+  margin: 0 0 0 0;
+  float: left;
+  position: relative;
+  right: 38.2%;
+  top: 12.5em;
+}
+/* line 33, startpage-centered.scss */
 body .container #menu h3 {
   display: none;
 }
-/* line 29, startpage-centered.scss */
-body .container #menu ul {
-  display: block;
-  margin: 0;
-}
-/* line 122, mixins.scss */
-body .container #menu ul li {
-  display: inline-block;
-  list-style-type: none;
-  margin-left: 0;
-  margin-right: 1.25em;
-  float: left;
-}
-/* line 129, mixins.scss */
-body .container #menu ul li.last {
-  margin-right: 0;
-}
-/* line 34, startpage-centered.scss */
-body .container #navigation {
+/* line 38, startpage-centered.scss */
+body .container #info, body .container #navigation {
   width: 19.1%;
-  margin: 0 0 0 80.9%;
+  margin: 0 0 0 0;
   float: left;
   position: fixed;
-  top: 7.5em;
-}
-/* line 40, startpage-centered.scss */
-body .container #navigation h3 {
+  top: 1.25em;
+  right: 0;
   display: none;
 }
-/* line 45, startpage-centered.scss */
-body .container #info {
-  width: 38.2%;
-  margin: 0 0 0 61.8%;
-  float: left;
-  position: fixed;
-  top: 0;
+/* line 46, startpage-centered.scss */
+body .container #info h3, body .container #navigation h3 {
+  display: none;
 }
 /* line 50, startpage-centered.scss */
-body .container #info h3 {
-  display: none;
+body .container #info ul, body .container #navigation ul {
+  margin-left: 2.5em;
 }
-/* line 54, startpage-centered.scss */
-body .container #info ul {
-  float: right;
+/* line 55, startpage-centered.scss */
+body .container #navigation {
+  top: 12.5em;
 }
 /* line 59, startpage-centered.scss */
 body .container #content {
-  width: 61.8%;
-  margin: 0 19.1% 0 19.1%;
+  width: 61.8%minor/2;
+  margin: 0 0 0 19.1%;
   float: left;
+  position: relative;
+  top: -10em;
 }
-/* line 62, startpage-centered.scss */
+/* line 64, startpage-centered.scss */
 body .container #content h3 {
   display: none;
 }
-/* line 66, startpage-centered.scss */
-body .container #content article {
-  max-width: 700px;
-}
-/* line 68, startpage-centered.scss */
+/* line 69, startpage-centered.scss */
 body .container #content article #title {
   display: none;
 }
-/* line 74, startpage-centered.scss */
+/* line 77, startpage-centered.scss */
 body .container #sidebar {
   width: 100%;
   float: left;
