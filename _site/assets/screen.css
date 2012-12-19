@@ -258,87 +258,50 @@ body .container input[type='checkbox']:checked:after {
   color: black;
 }
 
-/* line 2, startpage-centered.scss */
+/* line 2, startpage-classic.scss */
 body .container {
   width: 98%;
   margin: 0 auto;
 }
-/* line 7, startpage-centered.scss */
-body .container #logo {
-  width: 19.1%;
-  margin: 0 0 0 0;
-  float: left;
-  position: relative;
-}
-/* line 11, startpage-centered.scss */
-body .container #logo h1 {
-  padding: 1.25em 0 0;
-}
-/* line 16, startpage-centered.scss */
-body .container #strapline {
-  width: 19.1%;
-  margin: 0 0 0 0;
-  float: left;
-  position: relative;
-  right: 19.1%;
-  top: 5em;
-}
-/* line 22, startpage-centered.scss */
-body .container #strapline h2 {
-  padding: 0;
-}
-/* line 27, startpage-centered.scss */
-body .container #menu {
-  width: 19.1%;
-  margin: 0 0 0 0;
-  float: left;
-  position: relative;
-  right: 38.2%;
-  top: 12.5em;
-}
-/* line 33, startpage-centered.scss */
-body .container #menu h3 {
-  display: none;
-}
-/* line 38, startpage-centered.scss */
-body .container #info, body .container #navigation {
+/* line 7, startpage-classic.scss */
+body .container #header {
   width: 19.1%;
   margin: 0 0 0 0;
   float: left;
   position: fixed;
-  top: 1.25em;
-  right: 0;
+}
+/* line 12, startpage-classic.scss */
+body .container #header #logo h1 {
+  padding: 0;
+}
+/* line 18, startpage-classic.scss */
+body .container #header #strapline h2 {
+  padding: 0;
+}
+/* line 24, startpage-classic.scss */
+body .container #header #info h3, body .container #header #menu h3, body .container #header #navigation h3 {
   display: none;
 }
-/* line 46, startpage-centered.scss */
-body .container #info h3, body .container #navigation h3 {
-  display: none;
-}
-/* line 50, startpage-centered.scss */
-body .container #info ul, body .container #navigation ul {
-  margin-left: 2.5em;
-}
-/* line 55, startpage-centered.scss */
-body .container #navigation {
-  top: 12.5em;
-}
-/* line 59, startpage-centered.scss */
+/* line 31, startpage-classic.scss */
 body .container #content {
-  width: 61.8%minor/2;
+  width: 80.9%;
   margin: 0 0 0 19.1%;
   float: left;
-  position: relative;
-  top: -10em;
 }
-/* line 64, startpage-centered.scss */
+/* line 34, startpage-classic.scss */
 body .container #content h3 {
   display: none;
 }
-/* line 69, startpage-centered.scss */
+/* line 38, startpage-classic.scss */
+body .container #content article {
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* line 42, startpage-classic.scss */
 body .container #content article #title {
   display: none;
 }
-/* line 77, startpage-centered.scss */
+/* line 50, startpage-classic.scss */
 body .container #sidebar {
   width: 100%;
   float: left;

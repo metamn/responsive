@@ -1,0 +1,54 @@
+body {
+  .container {
+    width: 98%;
+    margin: 0 auto;
+    
+    
+    #header {
+      @include col($minor/2, 0, 0);
+      position: fixed;
+      
+      #logo {
+        h1 {
+          padding: 0;
+        }
+      }
+      
+      #strapline {
+        h2 {
+          padding: 0;
+        }
+      }
+      
+      #info, #menu, #navigation {
+        h3 {
+          display: none;
+        }
+      }
+    }
+    
+    
+    #content {
+      @include col($major+$minor/2, $minor/2, 0);
+      
+      h3 {
+        display: none;
+      }
+      
+      article {
+        max-width: 900px;
+        margin: 0 auto;
+        
+        #title {
+          display: none;
+        }
+      }
+    }
+    
+    
+    
+    #sidebar {
+      @include block;
+    }
+  }
+}
